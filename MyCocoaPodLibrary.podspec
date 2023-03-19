@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MyCocoaPodLibrary'
-  s.version          = '0.1.0'
+  s.version          = '2.0.0'
   s.summary          = 'A short description of MyCocoaPodLibrary.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,9 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'MyCocoaPodLibrary/Classes/**/*'
+  s.source_files = 'MyCocoaPodLibrary/Classes/**/*.{h,m,swift,c}'
+    s.public_header_files = 'MyCocoaPodLibrary/Classes/**/*.h'
+    s.exclude_files = 'MyCocoaPodLibrary/Classes/Exclude'
   
   # s.resource_bundles = {
   #   'MyCocoaPodLibrary' => ['MyCocoaPodLibrary/Assets/*.png']
