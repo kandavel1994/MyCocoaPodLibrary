@@ -13,6 +13,13 @@ class Tests: XCTestCase {
         super.tearDown()
     }
     
+    func testDoubleThisArray() {
+            let inputArray: [Float] = [1.0, 2.0, 3.0, 4.0]
+            let expectedArray: [Float] = [2.0, 4.0, 6.0, 8.0]
+            let resultArray = doubleThisArray(array: inputArray)
+            XCTAssertEqual(expectedArray, resultArray)
+    }
+    
     func testExample() {
         // This is an example of a functional test case.
         XCTAssert(true, "Pass")
